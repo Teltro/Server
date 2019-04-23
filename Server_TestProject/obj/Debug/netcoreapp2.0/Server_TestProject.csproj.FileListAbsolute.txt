@@ -1,0 +1,14 @@
+C:\Users\pavel_000\Desktop\dev\Server_TestProject\Server_TestProject\obj\Debug\netcoreapp2.0\Server_TestProject.csprojAssemblyReference.cache
+C:\Users\pavel_000\Desktop\dev\Server_TestProject\Server_TestProject\obj\Debug\netcoreapp2.0\Server_TestProject.csproj.CoreCompileInputs.cache
+C:\Users\pavel_000\Desktop\dev\Server_TestProject\Server_TestProject\obj\Debug\netcoreapp2.0\Server_TestProject.AssemblyInfoInputs.cache
+C:\Users\pavel_000\Desktop\dev\Server_TestProject\Server_TestProject\obj\Debug\netcoreapp2.0\Server_TestProject.AssemblyInfo.cs
+C:\Users\pavel_000\Desktop\dev\Server_TestProject\Server_TestProject\bin\Debug\netcoreapp2.0\Server_TestProject.deps.json
+C:\Users\pavel_000\Desktop\dev\Server_TestProject\Server_TestProject\bin\Debug\netcoreapp2.0\Server_TestProject.runtimeconfig.json
+C:\Users\pavel_000\Desktop\dev\Server_TestProject\Server_TestProject\bin\Debug\netcoreapp2.0\Server_TestProject.runtimeconfig.dev.json
+C:\Users\pavel_000\Desktop\dev\Server_TestProject\Server_TestProject\bin\Debug\netcoreapp2.0\Server_TestProject.dll
+C:\Users\pavel_000\Desktop\dev\Server_TestProject\Server_TestProject\bin\Debug\netcoreapp2.0\Server_TestProject.pdb
+C:\Users\pavel_000\Desktop\dev\Server_TestProject\Server_TestProject\bin\Debug\netcoreapp2.0\Server.dll
+C:\Users\pavel_000\Desktop\dev\Server_TestProject\Server_TestProject\bin\Debug\netcoreapp2.0\Server.pdb
+C:\Users\pavel_000\Desktop\dev\Server_TestProject\Server_TestProject\obj\Debug\netcoreapp2.0\Server_TestProject.csproj.CopyComplete
+C:\Users\pavel_000\Desktop\dev\Server_TestProject\Server_TestProject\obj\Debug\netcoreapp2.0\Server_TestProject.dll
+C:\Users\pavel_000\Desktop\dev\Server_TestProject\Server_TestProject\obj\Debug\netcoreapp2.0\Server_TestProject.pdb
