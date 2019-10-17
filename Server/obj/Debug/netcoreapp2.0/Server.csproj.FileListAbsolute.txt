@@ -7,3 +7,12 @@ C:\Users\pavel_000\Desktop\dev\Server_TestProject\Server\obj\Debug\netcoreapp2.0
 C:\Users\pavel_000\Desktop\dev\Server_TestProject\Server\obj\Debug\netcoreapp2.0\Server.AssemblyInfo.cs
 C:\Users\pavel_000\Desktop\dev\Server_TestProject\Server\obj\Debug\netcoreapp2.0\Server.dll
 C:\Users\pavel_000\Desktop\dev\Server_TestProject\Server\obj\Debug\netcoreapp2.0\Server.pdb
+D:\GitHub\Server\Server\bin\Debug\netcoreapp2.0\Server.deps.json
+D:\GitHub\Server\Server\bin\Debug\netcoreapp2.0\Server.dll
+D:\GitHub\Server\Server\bin\Debug\netcoreapp2.0\Server.pdb
+D:\GitHub\Server\Server\obj\Debug\netcoreapp2.0\Server.csprojAssemblyReference.cache
+D:\GitHub\Server\Server\obj\Debug\netcoreapp2.0\Server.csproj.CoreCompileInputs.cache
+D:\GitHub\Server\Server\obj\Debug\netcoreapp2.0\Server.AssemblyInfoInputs.cache
+D:\GitHub\Server\Server\obj\Debug\netcoreapp2.0\Server.AssemblyInfo.cs
+D:\GitHub\Server\Server\obj\Debug\netcoreapp2.0\Server.dll
+D:\GitHub\Server\Server\obj\Debug\netcoreapp2.0\Server.pdb

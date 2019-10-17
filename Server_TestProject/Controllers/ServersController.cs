@@ -33,7 +33,6 @@ namespace Server_TestProject.Controllers
         }
 
 
-        // ------------------Костыль---------------------- //
         [Http("GET")]
         public Models.Server Info(string endpoint)
         {
@@ -97,6 +96,7 @@ namespace Server_TestProject.Controllers
         [Http("GET")]
         public Match[] Matches(string endpoint)
         {
+            var sb = db.PlayersMatchStats.ToArray();
             return db.Matches
                 .Include(m => m.MapDb)
                 .Include(m => m.GameModeDb)
@@ -110,18 +110,25 @@ namespace Server_TestProject.Controllers
         {
             try
             {
+                var Servers = db.Servers.ToArray();
+                var Infos = db.Info.ToArray();
+                var Igms = db.InfoGameMods.ToArray();
+                var GameMods = db.GameMods.ToArray();
+
                 var server = db.Servers
                     .Include(s => s.PlayerStats)
                     .FirstOrDefault(serv => serv.Endpoint == endpoint);
-                var gameMode = db.InfoGameMods
-                     .Include(igm => igm.GameMode)
-                     .FirstOrDefault(igm => igm.Info.Server.Endpoint == endpoint
-                                        && igm.GameMode.Name == match.GameModeDb.Name)
-                     .GameMode;   
-                if (gameMode != null && server != null)
+                var infoGameMode = db.InfoGameMods
+                    .Include(igm => igm.GameMode)
+                    .Include(igm => igm.Info)
+                    .FirstOrDefault(igm => igm.Info.Server.Endpoint == endpoint
+                                    && igm.GameMode.Name == match.GameModeDb.Name);
+
+                if (infoGameMode != null && server != null)
                 {
-                    gameMode.Matches.Add(match);
-                    match.GameModeDb = gameMode;
+                    Console.WriteLine(match.TimeElapsed);
+                    infoGameMode.GameMode.Matches.Add(match);
+                    match.GameModeDb = infoGameMode.GameMode;
                     match.Server = server;
                     match.ScoreBoard = match.ScoreBoard.OrderByDescending(pms => pms.Kills).ToList();
                     db.Matches.Add(match);
@@ -134,27 +141,6 @@ namespace Server_TestProject.Controllers
                 Console.WriteLine($"{exc.Source}\n{exc.Message}\n");
             }
         }
-
-        //"Map": "pool_day",
-        //"GameMode": "DM",
-        //"TimeStamp": "2019-04-08T11:04:05.5657142",
-        //"FragLimit": 20,
-        //"TimeLimit": 5,
-        //"TimeElapsed": 4,
-        //"ScoreBoard": [
-        //    {
-        //        "Name": "nonche",
-        //        "Frags": 20,
-        //        "Kill": 20,
-        //        "Deaths": 0
-        //    },
-        //    {
-        //        "Name": "teltro",
-        //        "Frags": 0,
-        //        "Kill": 0,
-        //        "Deaths": 20
-        //    }
-        //]
 
         [Http("GET")]
         public Statistic Stats(string endpoint)
@@ -188,6 +174,7 @@ namespace Server_TestProject.Controllers
             return stats;
         }
 
+        
         private int MaximunMatchesPerDay(IEnumerable<Match> matches)
         {
             matches = matches.OrderBy(m => m.TimeStamp.Date);
@@ -228,8 +215,6 @@ namespace Server_TestProject.Controllers
                 else
                 {
                     date = match.TimeStamp.Date;
-                    //if (playersCount > playersMaxCount)
-                    //    playersMaxCount = playersCount;
                     playersCount = 0;
                 }
             }
@@ -238,7 +223,6 @@ namespace Server_TestProject.Controllers
 
         private string[] Top5GameMods(IEnumerable<Match> matches, IEnumerable<InfoGameMode> infoGameMods)
         {
-            //string[] top5GameMods = new string[matches.Count() > 5 ? 5 : matches.Count()];
             List<string> top5GameMods = new List<string>();
             int gameModePlayedCount;
             int gameModePlayedMaxCount;

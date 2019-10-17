@@ -4,8 +4,8 @@ using System.Text;
 
 namespace Server
 {
-    public abstract class Controller
-    {
-
-    }
+    /// <summary>
+    /// базовый класс контроллер, должен наследоваться контроллерами
+    /// </summary>
+    public abstract class Controller { }
 }

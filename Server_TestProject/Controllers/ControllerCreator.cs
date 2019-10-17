@@ -7,6 +7,9 @@ using Server.Interfaces;
 using Server_TestProject.Models;
 namespace Server_TestProject.Controllers
 {
+    /// <summary>
+    /// Фабрика по созданию контроллеров
+    /// </summary>
     public class ControllerCreator : IControllerCreator
     {
         ServerContext db;

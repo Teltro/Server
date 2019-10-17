@@ -12,3 +12,17 @@ C:\Users\pavel_000\Desktop\dev\Server_TestProject\Server_TestProject\bin\Debug\n
 C:\Users\pavel_000\Desktop\dev\Server_TestProject\Server_TestProject\obj\Debug\netcoreapp2.0\Server_TestProject.csproj.CopyComplete
 C:\Users\pavel_000\Desktop\dev\Server_TestProject\Server_TestProject\obj\Debug\netcoreapp2.0\Server_TestProject.dll
 C:\Users\pavel_000\Desktop\dev\Server_TestProject\Server_TestProject\obj\Debug\netcoreapp2.0\Server_TestProject.pdb
+D:\GitHub\Server\Server_TestProject\bin\Debug\netcoreapp2.0\Server_TestProject.deps.json
+D:\GitHub\Server\Server_TestProject\bin\Debug\netcoreapp2.0\Server_TestProject.runtimeconfig.json
+D:\GitHub\Server\Server_TestProject\bin\Debug\netcoreapp2.0\Server_TestProject.runtimeconfig.dev.json
+D:\GitHub\Server\Server_TestProject\bin\Debug\netcoreapp2.0\Server_TestProject.dll
+D:\GitHub\Server\Server_TestProject\bin\Debug\netcoreapp2.0\Server_TestProject.pdb
+D:\GitHub\Server\Server_TestProject\bin\Debug\netcoreapp2.0\Server.dll
+D:\GitHub\Server\Server_TestProject\bin\Debug\netcoreapp2.0\Server.pdb
+D:\GitHub\Server\Server_TestProject\obj\Debug\netcoreapp2.0\Server_TestProject.csprojAssemblyReference.cache
+D:\GitHub\Server\Server_TestProject\obj\Debug\netcoreapp2.0\Server_TestProject.csproj.CoreCompileInputs.cache
+D:\GitHub\Server\Server_TestProject\obj\Debug\netcoreapp2.0\Server_TestProject.AssemblyInfoInputs.cache
+D:\GitHub\Server\Server_TestProject\obj\Debug\netcoreapp2.0\Server_TestProject.AssemblyInfo.cs
+D:\GitHub\Server\Server_TestProject\obj\Debug\netcoreapp2.0\Server_TestProject.csproj.CopyComplete
+D:\GitHub\Server\Server_TestProject\obj\Debug\netcoreapp2.0\Server_TestProject.dll
+D:\GitHub\Server\Server_TestProject\obj\Debug\netcoreapp2.0\Server_TestProject.pdb

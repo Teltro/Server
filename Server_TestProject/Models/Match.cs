@@ -54,10 +54,9 @@ namespace Server_TestProject.Models
 
         public DateTime TimeStamp { get; set; }
         public int FragLimit { get; set; }
-        public int TimeLimit { get; set; }
-        public float TimeElapsed { get; set; }
+        public int TimeLimit { get; set; } 
+        public float TimeElapsed { get; set; } // TimeSpan??
         public List<PlayerMatchStats> ScoreBoard { get; set; }
-        //public PlayerMatchStats[] pmss { get; set; }
             
         [JsonIgnore]
         public Map MapDb { get; set; }
